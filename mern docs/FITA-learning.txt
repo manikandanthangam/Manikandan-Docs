@@ -1,0 +1,60 @@
+Softwares:
+++++++++++++++++++++++++++++++++++
+Nov 30, 2019:
+Node - https://nodejs.org/en/
+React:
+npm install -g create-react-app
+create-react-app <projectname>
+ref link: https://makandracards.com/reactjs-quick/52419-install-reactjs-windows
+Mongodb - https://www.mongodb.com/download-center/enterprise
+Visual studio - https://code.visualstudio.com/
+Github - https://github.com/
+
+node -> event based (php thread based -> max thread based on server -> core i5 8th gen -> 8 threads)
+react -> single page application
+mongo -> non relational (json format) (relational example -> mysql)
+=============================
+
+Server:
++++++++++++++++++++++++++++++++++++
+Dec 07, 2019:
+1. package.json
+2. dependency and devdependency
+Installing node module(nodemon)
+For global: npm install -g nodemon
+For dev: npm install --save-dev nodemon
+3. semantic versioning
+Ex: 12.13.1
+Here, 12-> broke change, 13-> functionality/feature changes, 1-> bug / issues fixes
+4. app.js -> routes flow
+Ex url: http://localhost:3001/student
+Flow -> (app.js -> app.use -> router var config) -> (router/student.js) -> based on calling method(get/post) render output will be given as response.
+5. Rest Api in server:
+    Get
+    post
+6. CORS
+
+Tasks:
+1. signup html
+2. login html
+3. reset password html
+4. deactivate account html
+----------
+
+Doubts:
+1. How to manage multiple node/react projects on a same server and how they will get started
+2. Node: Whether we should use "serve" -> scripts for configuring the additional modules like nodemon or we can use any other name. If we should use serve then how we configure another module.
+3. What is the use of private in packages.json
+4. Configuring new git doubts(how to remove subdirectory git and make the parent folder as git master, enable/disable git)
+5. first coming to app.js or index.js
+---------
+
+
+
+
+
+
+
+
+
+
