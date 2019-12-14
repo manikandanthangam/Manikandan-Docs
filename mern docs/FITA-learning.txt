@@ -1,3 +1,17 @@
+Common notes:
+For creating a new project:
+create-react-app 
+
+For checking mongodb via command promt:
+C:\Program Files\MongoDB\Server\4.2\bin>mongo
+show dbs 
+use database_name
+db.table_name.find()
+db.table_name.find().pretty()
+db.tbl_dummy.insertOne({"name":"dummy entry 1"})
+
+======================================
+
 Softwares:
 ++++++++++++++++++++++++++++++++++
 Nov 30, 2019:
@@ -59,6 +73,48 @@ Tasks:
 1. Signup react page design
 2. Login react page design
 ==============================
+Dec 14, 2019:
+
+For installing bootstrap:
+PS C:\Users\manik\mern\sample> npm install bootstrap --save
+
+1. Included bootstrap from internal node module
+2. Installed react-router-dom, react-router modules
+3. Included BrowserRouter from react-router-dom
+4. Created Header and Main components
+5. Included Router from react-router-dom
+6. Route tag used to where it need to be displayed
+7. Link tag used to link the redirection
+8. Created two dummy components
+9. Passed attribute value from parent dummy component to child dummy1 component
+10. Constructor and super functions
+11. Different type of issues in constructor and super configuration
+
+Tasks:
+1. CSS Transition
+2. CSS Transformation
+
+For creating a new project:
+create-react-app 
+
+For checking mongodb via command promt:
+C:\Program Files\MongoDB\Server\4.2\bin>mongo
+
+Required items for every class:
+1. React -> Run
+2. Node -> Run
+3. MongoDB -> Run
+4. Postman -> config each collections with corresponding method
+
+=================================================
+
+
+
+
+
+
+
+
 
 
 

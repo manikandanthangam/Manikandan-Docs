@@ -17,7 +17,7 @@
         crossorigin="anonymous"></script>
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <style>
-    #LoginContainer {
+    #SignupContainer {
         margin-top:30%;
         margin-top:30vh;
         padding:20px;
@@ -79,11 +79,27 @@ box-shadow: -1px 1px 18px 0px rgba(0,0,0,0.7);
 </head>
 
 <body>
-    <div class="container" id="LoginContainer">
-        <form class="FormContainer" id="LoginForm" type="POST" src="">
+    <div class="container" id="SignupContainer">
+        <form class="FormContainer" id="SignupForm" type="POST" src="">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="form-group"><h3 class="form-title">Sign In</h3></div>
+                    <div class="form-group"><h3 class="form-title">Signup</h3></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="" for="first_name"><i class="fas fa-id-badge"></i> First name</label>
+                        <input type="text" name="first_name" id="first_name" class="form-control" />
+                        <div class="feedback"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="" for="last_name"><i class="fas fa-id-badge"></i> Last name</label>
+                        <input type="text" name="last_name" id="last_name" class="form-control" />
+                        <div class="feedback"></div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -96,8 +112,24 @@ box-shadow: -1px 1px 18px 0px rgba(0,0,0,0.7);
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
+                        <label class="" for="phone_number"><i class="fas fa-mobile-alt"></i> Phone number</label>
+                        <input type="telephone" name="phone_number" id="phone_number" class="form-control" />
+                        <div class="feedback"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
                         <label class="" for="password"><i class="fas fa-key"></i> Password</label>
                         <input type="password" name="password" id="password" class="form-control" />
+                        <div class="feedback"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="" for="confirm_password"><i class="fas fa-key"></i> Confirm password</label>
+                        <input type="password" name="confirm_password" id="confirm_password" class="form-control" />
                         <div class="feedback"></div>
                     </div>
                 </div>
@@ -105,7 +137,7 @@ box-shadow: -1px 1px 18px 0px rgba(0,0,0,0.7);
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group SubmitBtnContainer">
-                        <input type="button" name="LoginSubmitBtn" id="LoginSubmitBtn" class="btn btn-primary" value="Submit" onClick="LoginValidate();" />
+                        <input type="button" name="SignupSubmitBtn" id="SignupSubmitBtn" class="btn btn-primary" value="Submit" onClick={()=>this.SignupSubmitFun()} />
                     </div>
                 </div>
             </div>
@@ -113,30 +145,61 @@ box-shadow: -1px 1px 18px 0px rgba(0,0,0,0.7);
     </div>
 </body>
 <script>
-function LoginValidate(){
-    var LoginEmail = $.trim($("#email").val());
-    var LoginPassword = $.trim($("#password").val());
+function SignupSubmitFun(){
+    var FirstName   = $.trim($("#first_name").val());
+    var LastName    = $.trim($("#last_name").val());
+    var Email       = $.trim($("#email").val());
+    var Phone       = $.trim($("#phone_number").val());
+    var Password    = $.trim($("#password").val());
+    var ConfirmPassword = $.trim($("#confirm_password").val());
+
+    
     $(".row .feedback").removeClass("alert-danger");
     $(".row .feedback").text("").hide();
-    if(LoginEmail == ""){
+    if(FirstName == ""){
+        $("#first_name").parent().find(".feedback").text("First name is required").show();
+        $("#first_name").parent().find(".feedback").addClass("alert-danger");
+        $("#first_name").focus();
+        return false;
+    } else if(LastName == ""){
+        $("#last_name").parent().find(".feedback").text("Last name is required").show();
+        $("#last_name").parent().find(".feedback").addClass("alert-danger");
+        $("#last_name").focus();
+        return false;
+    } else if(Email == ""){
         $("#email").parent().find(".feedback").text("Email is required").show();
         $("#email").parent().find(".feedback").addClass("alert-danger");
         $("#email").focus();
         return false;
-    } else if(!isEmail(LoginEmail)){
+    } else if(!isEmail(Email)){
         $("#email").parent().find(".feedback").text("Email is invalid").show();
         $("#email").parent().find(".feedback").addClass("alert-danger");
         $("#email").focus();
         return false;
-    } else if(LoginPassword == ""){
+    } else if(Phone == ""){
+        $("#phone_number").parent().find(".feedback").text("Phone is required").show();
+        $("#phone_number").parent().find(".feedback").addClass("alert-danger");
+        $("#phone_number").focus();
+        return false;
+    } else if(Password == ""){
         $("#password").parent().find(".feedback").text("Password is required").show();
         $("#password").parent().find(".feedback").addClass("alert-danger");
         $("#password").focus();
         return false;
+    }  else if(ConfirmPassword == ""){
+        $("#confirm_password").parent().find(".feedback").text("Confirm password is required").show();
+        $("#confirm_password").parent().find(".feedback").addClass("alert-danger");
+        $("#confirm_password").focus();
+        return false;
+    }  else if(Password != ConfirmPassword){
+        $("#confirm_password").parent().find(".feedback").text("Password and Confirm password should be same").show();
+        $("#confirm_password").parent().find(".feedback").addClass("alert-danger");
+        $("#confirm_password").focus();
+        return false;
     } else {
-        // #("#LoginForm").submit();
+        // #("#SignupForm").submit();
     }
-
+    ConfirmPassword
 }
 
 function isEmail(email) {
