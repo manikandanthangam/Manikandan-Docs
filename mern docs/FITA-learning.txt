@@ -106,6 +106,13 @@ Required items for every class:
 3. MongoDB -> Run
 4. Postman -> config each collections with corresponding method
 
+Doubts:
+1. Why we didn't used parent div element on main(switch) and header(header) file
+- we can use any html tas as a parent like header
+2. Whether Swith is like navigation scripts?
+- Yes, it's like switch case concept, only one case will be executed at a time, if nothing mathched then it will execute default.
+3. We should include Header and Main order or we can use any order.
+- page content served through main file so it should be below header.
 =================================================
 
 
