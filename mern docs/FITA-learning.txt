@@ -1,6 +1,30 @@
 Common notes:
-For creating a new project:
-create-react-app 
+node -v (get node version)
+npm -v (get npm version)
+For installing a new react app with global:
+npm install -g create-react-app
+--go to corresponding folder--
+mkdir react
+cd react
+create-react-app project_name
+
+    Installation process of node:
+    fetch, load, extract and finalize
+
+    Github:
+    create new repository
+    repositoryname.github.io
+    Terminal -> go to folder -> npm run build
+
+C:\Users\manik\mysite\manikandanthangam.github.io>git clone https://github.com/manikandanthangam/manikandanthangam.github.io.git
+C:\Users\manik\mysite\manikandanthangam.github.io>git add . 
+C:\Users\manik\mysite\manikandanthangam.github.io>cd manikandanthangam.github.io 
+C:\Users\manik\mysite\manikandanthangam.github.io>git add . 
+C:\Users\manik\mysite\manikandanthangam.github.io>git commit -m "Initial deployment" 
+C:\Users\manik\mysite\manikandanthangam.github.io>git push 
+
+Rourter basic ref: https://blog.pshrmn.com/simple-react-router-v4-tutorial/
+
 
 For checking mongodb via command promt:
 C:\Program Files\MongoDB\Server\4.2\bin>mongo
@@ -114,6 +138,54 @@ Doubts:
 3. We should include Header and Main order or we can use any order.
 - page content served through main file so it should be below header.
 =================================================
+Dec 16, 2019:
+
+html, css basics
+document, window, 
+Browser objects:
+we can access browser objects by using any client side language
+localStorage, sessionStorage
+localStorage -> will get cleared when user clear cache
+sessionStorage -> will get cleared when close the browser
+web SQL -> indexedDb (for managing and syncing offline data)
+cookies -> handled on server side
+service workers -> used for push notification
+
+ECMASCRIPT -> https://en.wikipedia.org/wiki/ECMAScript
+It is the browser standard for javascript and all the browsers should meet the ECMASCRIPT standard
+ES6:
+Breaking change
+before ES6 -> functional oriented programming (EX: C)
+OOPS has inclueded in ES6
+
+For supporting ES6 compilers are used to convert the browser(ES6) understanding language.
+Sample compilers:
+React -> Babel
+Angular -> Typescript
+
+ES6 launched on 2015
+
+Server jobs:
+Data transmission
+Authentication
+Autorization
+
+---------
+CSS Types:
+CSS
+SCSS
+SASS
+LESS
+SCSS, SCSS, SASS, LESS are pre procesers
+we can use it as a variable and use it on style. It cannot used on CSS.
+most used one is SASS (Youssouf)
+
+Task:
+Create table design with sample data(https://jsonplaceholder.typicode.com/comments)
+
+================================
+
+
 
 
 
