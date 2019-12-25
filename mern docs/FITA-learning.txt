@@ -184,6 +184,28 @@ Task:
 Create table design with sample data(https://jsonplaceholder.typicode.com/comments)
 
 ================================
+Dec 21, 2019:
+
+React charts 2:
+Ref: https://jerairrest.github.io/react-chartjs-2/
+npm install --save react-chartjs-2 chart.js
+---------
+Dec 22, 2019
+
+core components
+Dynamic table display using core components concept
+
+Task:
+Design a dashboard with left side content(3) and right side different charts(9)
+
+=======================================
+
+
+
+
+
+
+
 
 
 
