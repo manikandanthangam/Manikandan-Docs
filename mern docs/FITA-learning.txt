@@ -199,6 +199,20 @@ Task:
 Design a dashboard with left side content(3) and right side different charts(9)
 
 =======================================
+Dec 28, 2019:
+
+
+Mongoose module:
+npm install mongoose --save
+
+Task:
+1. complete the table list data pending item
+2. create employee model as like user model
+
+========================================
+
+
+
 
 
 
