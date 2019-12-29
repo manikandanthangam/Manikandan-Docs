@@ -210,6 +210,20 @@ Task:
 2. create employee model as like user model
 
 ========================================
+Dec 29, 2019:
+React: State
+
+Node: connection between model, controller
+
+Common: connection between node and react with get method.
+
+npm install axios --save
+
+React - Form - comments (for next class)
+React - Employee list (for practicing todays items)
+React - Comments list page design (for future class)
+
+=========================================
 
 
 
