@@ -200,9 +200,8 @@ Design a dashboard with left side content(3) and right side different charts(9)
 
 =======================================
 Dec 28, 2019:
-
-
 Mongoose module:
+Ref: https://mongoosejs.com/docs/
 npm install mongoose --save
 
 Task:
@@ -215,13 +214,23 @@ React: State
 
 Node: connection between model, controller
 
-Common: connection between node and react with get method.
+Common: connection between mongodb, node and react with react get method.
+axios is used to hit api call in react and it's like router on node.
 
+Axios:
+Ref: https://www.npmjs.com/package/axios
 npm install axios --save
 
-React - Form - comments (for next class)
-React - Employee list (for practicing todays items)
-React - Comments list page design (for future class)
+Tasks:
+1. React - Form - comments (for next class)
+2. React - Employee list (for practicing todays items)
+3. React - Comments list page design (for future class)
+
+Doubts:
+1. how axios is working without importing it.
+2. function (arg) and (arg) => () are same or different
+3. I have given employee table name as "Employee" in the model but how it connected with Employees table.
+3. Warning: Each child in a list should have a unique "key" prop.
 
 =========================================
 
