@@ -230,7 +230,8 @@ Doubts:
 1. how axios is working without importing it.
 2. function (arg) and (arg) => () are same or different
 3. I have given employee table name as "Employee" in the model but how it connected with Employees table.
-3. Warning: Each child in a list should have a unique "key" prop.
+4. react build doubt
+5. Warning: Each child in a list should have a unique "key" prop.
 
 =========================================
 
