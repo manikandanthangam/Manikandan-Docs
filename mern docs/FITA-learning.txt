@@ -227,13 +227,34 @@ Tasks:
 3. React - Comments list page design (for future class)
 
 Doubts:
-1. how axios is working without importing it.
-2. function (arg) and (arg) => () are same or different
-3. I have given employee table name as "Employee" in the model but how it connected with Employees table.
-4. react build doubt
-5. Warning: Each child in a list should have a unique "key" prop.
+1. function (arg) and (arg) => () are same or different
+For ES6 we need to use arrow function in order to use this keyword. If this keyword not used then we can use any function type.
+2. I have given employee table name as "Employee" in the model but how it connected with Employees table.
+It's adding plural(i.e "s") for those words (Ex: user, employee). It might be caused by used extension "mangoose" not mongodb.
+3. react build doubt
+It was cache issue
+4. Warning: Each child in a list should have a unique "key" prop.
 
 =========================================
+Jan 04, 2019:
+Pagination related items
+image path setup in react - In react we standardly manage the images under public folder so that browser can access after taking build.
+
+Tasks:
+1. List with card design
+2. View card design
+
+
+
+==========================================
+
+
+
+
+
+
+
+
 
 
 
