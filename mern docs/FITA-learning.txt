@@ -247,9 +247,21 @@ Tasks:
 
 
 ==========================================
+Jan 05, 2019:
 
+1. GET and DELETE requests on server
+2. connect get and delete requests on react done with console log
 
+Notes:
+For GET and DELETE we can only pass data on querystring and read it through params on server
+For post method we can pass data as json and read it through body on server
 
+Tasks: 
+1. Sweet Alert - check design samples
+2. Edit, Delete for comments (react)
+3. edit, delete for comments (server)
+
+============================================
 
 
 
