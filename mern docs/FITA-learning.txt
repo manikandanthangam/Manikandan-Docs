@@ -262,6 +262,37 @@ Tasks:
 3. edit, delete for comments (server)
 
 ============================================
+Jan 11, 2020:
+
+Pagination - dynamically loaded pagination data for 10 pages, prev, next, first, last and filtered data based on the page. 
+localStorage -> "localStorage.getItem, localStorage.setItem"
+sessionStorage -> -> "localStorage.getItem, localStorage.setItem"
+
+localStorage will not clear until user clears browser cache.
+sessionStorage will be cleared when user close the corresponding website tab.
+
+localStorage limit:
+mobile browser -> 5mb
+web browser -> 50 mb 
+
+Task:
+1. Sweet alert - try with object based inputs
+2. pagination - design limit options (5, 10, 20, 30, 40, 50)
+
+=======================================
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
