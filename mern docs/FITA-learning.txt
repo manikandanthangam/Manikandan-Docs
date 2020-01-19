@@ -280,10 +280,22 @@ Task:
 2. pagination - design limit options (5, 10, 20, 30, 40, 50)
 
 =======================================
+Jan 19, 2020:
+
+- get one record, update delete for comments
 
 
+Tasks:
+1. get one record, delete for employee
+2. employee edit page - if click on edit icon provide option to edit and need delete option with confirm popup
+3. comments list page - add edit, delete icons on list page, if clic on edit provide option to edit and need delete option with confirm popup
+4. search with per page limit filter options
+5. signup and login page server connection setup to do the encription/decription
+6. analyse pie chart - To display pie chart based on employee age filter.
 
+Note: 4, 5, 6 we can give low priority
 
+========================================
 
 
 
