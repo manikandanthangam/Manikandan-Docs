@@ -336,13 +336,14 @@ componentWillUnmount - when leaves a component it will destroy that component
 componentWillUpdate - before update props, state data
 componentDidUpdate - after update props, state data
 
-Node js in reple 
+Node js - reple 
 one line executor - it's used to execute files, logics, xls reading, node modules
+for running a file - node filename
+Note: we can run this from anywhere on the node installed server.
 
 Node:
 bcryptjs - https://www.npmjs.com/package/bcryptjs
 It is for encrypt password and compare existing password during signup/login.
-
 
 Doubts:
 How to disable pages baesd on login
