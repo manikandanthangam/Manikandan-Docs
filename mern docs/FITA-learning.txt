@@ -34,6 +34,8 @@ db.table_name.find()
 db.table_name.find().pretty()
 db.tbl_dummy.insertOne({"name":"dummy entry 1"})
 
+
+express js -> used for node js
 ======================================
 
 Softwares:
@@ -295,11 +297,79 @@ Tasks:
 
 Note: 4, 5, 6 we can give low priority
 
+Doubts:
+1. what is the correct way to redirect(without reload) to another page in react
 ========================================
+Jan 25, 2020:
+
+controlled component in react
+constructor{
+    this.changevalue = this.name.bind(this);
+}
+
+Task:
+react - update for employee
+react - prefill, change, update for comments like employee
+
+========================================
+Jan 26, 2020:
+
+Export data as xlsx:
+xlsx package: https://www.npmjs.com/package/xlsx
+react github: https://github.com/SheetJS/sheetjs/tree/6551dd0e051acac5031ffb728a16932bbf34c80a/demos/react
+
+Tasks:
+1. Login / Signup setup (for next class)
+
+2. Pending works in comments section
+3. Error handling for remaining routes
+
+=================================
+Feb 01, 2020:
+
+React lifecycles
+Ex case: when we call two view links from a list page, which one will get processed related logics can handle by using lifecycles. 
+
+componentWillMount - before mount a component
+componentDidMount - after mount a component
+componentWillUnmount - when leaves a component it will destroy that component
+componentWillUpdate - before update props, state data
+componentDidUpdate - after update props, state data
+
+Node js in reple 
+one line executor - it's used to execute files, logics, xls reading, node modules
+
+Node:
+bcryptjs - https://www.npmjs.com/package/bcryptjs
+It is for encrypt password and compare existing password during signup/login.
 
 
+Doubts:
+How to disable pages baesd on login
+how to pass data in local storage data on header
+How to load a list component without redirection when data updated
+
+================================
+Pending tasks:
+Pagination limit filters and other options
+Login, Signup
+Password encription/decription - done
+Google map
 
 
+Pending portions:
+React - Life cycles - done
+React - Fragments
+React - Producer and Consumer
+
+Node js:
+Password encription/decription and login based components enable/disable
+Error handling (200 to 304 is success response in server) - done
+Node js in reple (one line executor - it's used to execute files, logics, xls reading, node modules) - done
+
+Db direct handling
+
+=========================================
 
 
 
