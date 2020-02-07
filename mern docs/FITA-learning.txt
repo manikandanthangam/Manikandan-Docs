@@ -330,6 +330,8 @@ Feb 01, 2020:
 React lifecycles
 Ex case: when we call two view links from a list page, which one will get processed related logics can handle by using lifecycles. 
 
+https://hackernoon.com/reactjs-component-lifecycle-methods-a-deep-dive-38275d9d13c0
+
 componentWillMount - before mount a component
 componentDidMount - after mount a component
 componentWillUnmount - when leaves a component it will destroy that component
@@ -345,22 +347,96 @@ Node:
 bcryptjs - https://www.npmjs.com/package/bcryptjs
 It is for encrypt password and compare existing password during signup/login.
 
-Doubts:
-How to disable pages baesd on login
-how to pass data in local storage data on header
-How to load a list component without redirection when data updated
 
 ================================
+Feb 02, 2020:
+
+Fragments:
+it's nothing but we can use it as a root node(React.Fragment) for a component. When we use fragment as a root it will not visible in the dom.
+
+Context API:
+Basically React is a top-down drilling, so if we have multiple child components and we need to pass data from child to parent then we need to pass it through the linked components only.
+
+To avoid this earlier 15.x versions used two concepts,
+In React 15.x versions we are using below,
+Redux - In this method we can store data on a single global object (producer)
+Mobx - In this method
+
+To overcome this React implemented Context API in 16.3. 
+
+Context API
+- Provider
+- Consumer
+
+if we have multiple variables in a component then we can export one as default and we need to export other variables as a constant export.
+example refer provider component(provider - default, consumer - custom constant variable)
+
+when we write arrow function within the html then we need to use () instead of {}
+Outside render ->   () => {}
+Within render -> () => () 
+
+chennai meetup group - search for free meetup to attend and learn about technologies demo.
+
+=====================
+
+React - Doubts:
+Login based pages display looks not working properly
+How to disable pages based on login
+How to load another(view -> list) component without redirection when data updated
+How to config site urls for different environment
+How to get state value inside a arrow function (commontable -> save -> state.id).
+What is middleware
+How to do fileupload in react and how to handle it on node
+How to write a code to work on live environment only.
+React - live movement process
+
+
+Node - Doubts:
+Node js Architecture, what is event loops, what is LibUV
+what is promises? asyn/await? difference between promises and asyn/await?
+How to write unit test?
+What is build automation? gulb, grunt
+What is cron job? how to schedule it?
+How to secure your application/
+What is process and its usage(uncaughtexception,exit,nexttick)
+Why is Node.js Single-threaded?
+What are “streams” in Node.js? Explain the different types of streams present in Node.js.
+What are Globals in Node.js?
+Default Parameters in ES6
+Template Literals in ES6
+Multi-line Strings in ES6
+Destructuring Assignment in ES6
+Enhanced Object Literals in ES6
+Arrow Functions in ES6, what is the advantage of arrow function
+Promises in ES6
+Block-Scoped Constructs Let and Const
+Classes in ES6
+Modules in ES6
+Hoisting in javascript?
+Arrow function? with an example?
+let const?
+
+Mongodb aggregation
+How to get two table data as combined(like join queries) in MongoDB
+
+
+
+
+
+Node - live movement process
+
+
+
 Pending tasks:
 Pagination limit filters and other options
-Login, Signup
+Login, Signup - done
 Password encription/decription - done
 Google map
 
 
 Pending portions:
 React - Life cycles - done
-React - Fragments
+React - Fragments - done
 React - Producer and Consumer
 
 Node js:
@@ -368,7 +444,7 @@ Password encription/decription and login based components enable/disable
 Error handling (200 to 304 is success response in server) - done
 Node js in reple (one line executor - it's used to execute files, logics, xls reading, node modules) - done
 
-Db direct handling
+Db direct handling - done
 
 =========================================
 
